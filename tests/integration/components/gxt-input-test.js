@@ -1,25 +1,23 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('tree-node', 'Integration | Component | tree node', {
+moduleForComponent('gxt-input', 'Integration | Component | gxt input', {
   integration: true
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
-
   // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  // Handle any actions with this.on('myAction', function(val) { ... });"
 
-  this.render(hbs`{{tree-node}}`);
+  this.render(hbs`{{gxt-input}}`);
 
   assert.equal(this.$().text().trim(), '');
 
-  // Template block usage:
+  // Template block usage:"
   this.render(hbs`
-    {{#tree-node}}
+    {{#gxt-input}}
       template block text
-    {{/tree-node}}
+    {{/gxt-input}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');

@@ -1,4 +1,4 @@
-# Ember-cli-gxt-camo
+# ember-cli-gxt22
 
 This README outlines the details of collaborating on this Ember addon.
 

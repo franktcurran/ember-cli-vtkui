@@ -1,25 +1,23 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('content-panel', 'Integration | Component | content panel', {
+moduleForComponent('gxt-toolbar', 'Integration | Component | gxt toolbar', {
   integration: true
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
-
   // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  // Handle any actions with this.on('myAction', function(val) { ... });"
 
-  this.render(hbs`{{content-panel}}`);
+  this.render(hbs`{{gxt-toolbar}}`);
 
   assert.equal(this.$().text().trim(), '');
 
-  // Template block usage:
+  // Template block usage:"
   this.render(hbs`
-    {{#content-panel}}
+    {{#gxt-toolbar}}
       template block text
-    {{/content-panel}}
+    {{/gxt-toolbar}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');

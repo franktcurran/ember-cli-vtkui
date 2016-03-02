@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-gxt-camo'
+  name: 'ember-cli-gxt22'
 };

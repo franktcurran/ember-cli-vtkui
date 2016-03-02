@@ -1,13 +1,18 @@
-/*body {
-	background-color: white;
-	color: black;
-	font-family: Arial, sans-serif;
-	font-size: small;
-	margin: 0px;
-  padding: 0px;
-}*/
+body {
+	padding: 5px !important;
+}
+.padded-5 {
+	padding: 5px;
+}
 
+
+/*
+ 	override some stuff
+*/
 
 .x-form-item-label {
 	font-weight: bold;
+}
+.x-border-panel {
+	position: relative !important;
 }
