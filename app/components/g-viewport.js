@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-gxt-camo/components/g-viewport';
