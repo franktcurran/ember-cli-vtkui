@@ -19,6 +19,8 @@
 
 .g-panel {
 	margin-bottom: 5px;
+}
+.g-panel:hover {
 	box-shadow: 1px 1px 3px silver;
 }
 .g-panel-heading {

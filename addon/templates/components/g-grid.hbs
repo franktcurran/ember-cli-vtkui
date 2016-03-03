@@ -1,1 +1,9 @@
-{{yield}}
+<tr>
+  {{yield}}
+</tr>
+
+{{!--#each content as |item idx|}}
+  <tr>
+    {{yield item}}
+  </tr>
+{{/each--}}

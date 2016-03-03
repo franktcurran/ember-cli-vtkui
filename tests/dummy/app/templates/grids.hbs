@@ -1,5 +1,17 @@
-{{!--#g-panel title="Grids"}}
-  {{#g-panel-body--}}
+{{!--
+{{#g-grid content=model as |person|}}
+  {{#g-grid-col row=person}}
+    {{person.firsName}}
+  {{/g-grid-col}}
+  {{person}}
+{{/g-grid}}
+
+<br/>
+<hr/>
+--}}
+
+{{#g-panel title="Grids"}}
+  {{#g-panel-body}}
 
     <table class="g-grid" cellspacing="0">
       <thead>
@@ -28,5 +40,5 @@
       </tbody>
     </table>
 
-  {{!--/g-panel-body}}
-{{/g-panel--}}
+  {{/g-panel-body}}
+{{/g-panel}}
