@@ -9,7 +9,7 @@ module.exports = {
 
   afterInstall: function() {
     // return RSVP.all([
-      this.addPackageToProject('ember-cli-selectize', '0.5.2');
+      return this.addPackageToProject('ember-cli-selectize', '0.5.2');
     // ]);
   }
 }
