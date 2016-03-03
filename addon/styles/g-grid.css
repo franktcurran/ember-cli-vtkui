@@ -1,0 +1,30 @@
+.g-grid {
+	width: 100%;
+	box-shadow: 1px 1px 3px silver;
+}
+.g-grid > * {
+	font-family: arial,tahoma,verdana,helvetica;
+	font-size: 12px;
+}
+.g-grid tr {
+	line-height: 12px;
+}
+
+.g-grid tr:hover {
+	background: #eee;
+}
+
+.g-grid tr th {
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 4px;
+	text-align: left;
+	background: linear-gradient(180deg, whitesmoke 70%, #eee 30%);
+}
+.g-grid td {
+	padding: 4px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	line-height: 14px;
+}
