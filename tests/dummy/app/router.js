@@ -6,9 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('gxt-panel');
-  this.route('gxt-input');
-  this.route('gxt-button');
+  this.route('panels');
+  this.route('inputs');
+  this.route('buttons');
+  this.route('grids');
 
   this.route('mashup');
 });

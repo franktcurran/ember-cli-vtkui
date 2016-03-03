@@ -1,18 +1,3 @@
 body {
-	padding: 5px !important;
-}
-.padded-5 {
 	padding: 5px;
-}
-
-
-/*
- 	override some stuff
-*/
-
-.x-form-item-label {
-	font-weight: bold;
-}
-.x-border-panel {
-	position: relative !important;
 }

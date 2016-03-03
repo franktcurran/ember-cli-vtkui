@@ -1,0 +1,26 @@
+{{#g-panel title="Inputs"}}
+  {{#g-panel-body}}
+
+    <span class="g-input-field-label">First Name:</span> {{model.firstName}} <br/>
+    <span class="g-input-field-label">Middle Name:</span> {{model.middleName}} <br/>
+    <span class="g-input-field-label">Last Name:</span> {{model.lastName}} <br/>
+    <span class="g-input-field-label">Birthday:</span> {{model.bday}} <br/>
+    <hr/>
+
+    <form>
+      {{g-input label="First Name" value=model.firstName}}
+      {{g-input label="Middle Name" value=model.middleName}}
+      {{g-input label="Last Name" value=model.lastName}}
+      {{g-input label="Birthday" type="date" value=model.bday}}
+    </form>
+
+    <hr/>
+
+    {{#g-panel title="Example"}}
+      {{#g-panel-body}}
+        <pre>&#123;&#123;gxt-input label="First Name" value=model.firstName&#125;&#125;</pre>
+      {{/g-panel-body}}
+    {{/g-panel}}
+
+  {{/g-panel-body}}
+{{/g-panel}}
