@@ -11,7 +11,10 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rynam0/ember-cli-vtkui"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
