@@ -1,0 +1,20 @@
+.selectize-dropdown, .selectize-input, .selectize-input input {
+  font-size: 12px;
+	font-family: arial,tahoma,verdana,helvetica;
+  line-height: 18px;
+  width: 190px;
+}
+.selectize-input {
+  padding: 2px;
+  padding-left: 4px;
+  display: inline-block;
+}
+
+.selectize-input > input {
+  display: inline-block;
+}
+.selectize-control {
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+}

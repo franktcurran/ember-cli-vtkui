@@ -1,0 +1,21 @@
+{{#g-panel title="Combos"}}
+  {{#g-panel-body}}
+    <p>This is a "combo"... really, it is an
+      <a href="https://github.com/miguelcobain/ember-cli-selectize" target="_blank">ember-cli-selectize</a>
+      component under the covers.
+    </p>
+
+    {{g-selectize label="Robot" content=model optionValuePath="content.id" optionLabelPath="content.name"
+      placeholder="Select a Droid..."}}
+
+    <hr/>
+
+    {{#g-panel title="Example"}}
+      {{#g-panel-body}}
+<pre>&#123;&#123;g-selectize label="Robot" content=model optionValuePath="content.id" optionLabelPath="content.name"
+  placeholder="Select a Droid..."&#125;&#125;</pre>
+      {{/g-panel-body}}
+    {{/g-panel}}
+
+  {{/g-panel-body}}
+{{/g-panel}}

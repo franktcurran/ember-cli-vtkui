@@ -1,13 +1,19 @@
+.g-input {
+	height: 28px;
+}
+.g-input-field {
+	padding: 2px;
+	height: 18px;
+	width: 190px;
+	font-size: 12px;
+	font-family: arial,tahoma,verdana,helvetica;
+	border: 1px solid #a9bfd3;
+	background: linear-gradient(180deg, whitesmoke 5%, white 95%);
+}
 .g-input-field-label {
 	min-width: 100px;
 	display: inline-block;
 	font-weight: bold;
-}
-.g-input-field {
-	margin-bottom: 4px;
-	height: 18px;
-	width: 190px;
 	font-size: 12px;
-	border: 1px solid #a9bfd3;
-	background: linear-gradient(180deg, whitesmoke 5%, white 95%);
+	font-family: arial,tahoma,verdana,helvetica;
 }
