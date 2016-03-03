@@ -1,15 +1,16 @@
 // var RSVP = require('rsvp');
 
 module.exports = {
-  normalizeEntityName: function() {},
+  normalizeEntityName: function() {}
+  // ,
 
   // beforeInstall: function(options) {
   //   return this.addBowerPackageToProject('materialize', '~0.97.0');
   // },
 
-  afterInstall: function() {
+  // afterInstall: function() {
     // return RSVP.all([
-      return this.addPackageToProject('ember-cli-selectize', '0.5.2');
+      // return this.addPackageToProject('ember-cli-selectize', '0.5.2');
     // ]);
-  }
+  // }
 }
