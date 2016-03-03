@@ -40,7 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/ember-cli-gxt22'
+    ENV.baseURL = '/ember-cli-vtkui'
   }
 
   return ENV;

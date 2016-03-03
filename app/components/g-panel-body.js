@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-gxt22/components/g-panel-body';
+export { default } from 'ember-cli-vtkui/components/g-panel-body';

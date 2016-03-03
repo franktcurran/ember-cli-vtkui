@@ -1,4 +1,4 @@
-# ember-cli-gxt22
+# ember-cli-vtkui
 
 This README outlines the details of collaborating on this Ember addon.
 

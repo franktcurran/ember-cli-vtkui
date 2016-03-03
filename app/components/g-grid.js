@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-gxt22/components/g-grid';
+export { default } from 'ember-cli-vtkui/components/g-grid';

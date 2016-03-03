@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-gxt22/components/g-toolbar';
+export { default } from 'ember-cli-vtkui/components/g-toolbar';

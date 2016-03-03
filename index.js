@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-gxt22'
+  name: 'ember-cli-vtkui'
 };
