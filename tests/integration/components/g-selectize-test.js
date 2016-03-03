@@ -1,13 +1,15 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { moduleForComponent } from 'ember-qunit';
+import { skip } from 'qunit';
 import hbs from 'htmlbars-inline-precompile';
 
 moduleForComponent('g-selectize', 'Integration | Component | g selectize', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });"
-  this.render(hbs`{{g-selectize}}`);
-  assert.equal(this.$().text().trim(), '');
+skip('it renders', function(assert) {
+  let model = [{id:"1",name:'one'}, {id:"2",name:'two'}];
+  this.set('model', model);
+
+  this.render(hbs`{{g-selectize content=model optionValuePath="content.id" optionLabelPath="content.name"}}`);
+  assert.ok(this.$().hasClass('g-input'));
 });
