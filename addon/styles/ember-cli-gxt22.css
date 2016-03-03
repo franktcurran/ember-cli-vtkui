@@ -19,7 +19,7 @@
 
 .g-panel {
 	margin-bottom: 5px;
-	box-shadow: 2px 2px 5px silver;
+	box-shadow: 1px 1px 3px silver;
 }
 .g-panel-heading {
 	height: 25px;
@@ -74,7 +74,7 @@
 
 .g-grid {
 	width: 100%;
-	box-shadow: 2px 2px 5px silver;
+	box-shadow: 1px 1px 3px silver;
 }
 .g-grid > * {
 	font-family: arial,tahoma,verdana,helvetica;
