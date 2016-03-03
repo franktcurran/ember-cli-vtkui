@@ -1,5 +1,7 @@
 # ember-cli-vtkui
 
+[![Build Status](https://travis-ci.org/rynam0/ember-cli-vtkui.svg?branch=master)](https://travis-ci.org/rynam0/ember-cli-vtkui)
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
