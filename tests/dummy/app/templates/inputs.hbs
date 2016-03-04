@@ -5,6 +5,7 @@
     <span class="g-input-field-label">Middle Name:</span> {{model.middleName}} <br/>
     <span class="g-input-field-label">Last Name:</span> {{model.lastName}} <br/>
     <span class="g-input-field-label">Birthday:</span> {{model.bday}} <br/>
+    <span class="g-input-field-label">Notes:</span> {{model.notes}} <br/>
     <hr/>
 
     <form>
@@ -12,13 +13,27 @@
       {{g-input label="Middle Name" value=model.middleName}}
       {{g-input label="Last Name" value=model.lastName}}
       {{g-input label="Birthday" type="date" value=model.bday}}
+
+      {{g-textarea label="Notes" value=model.notes}}
+
+      <div class="rg">
+        <label>Radios</label>
+        <input type="radio" name="rg" value=1> one
+        <input type="radio" name="rg" value=2> two
+        <input type="radio" name="rg" value=3> three
+      </div>
+
     </form>
+
 
     <hr/>
 
     {{#g-panel title="Example"}}
       {{#g-panel-body}}
-        <pre>&#123;&#123;g-input label="First Name" value=model.firstName&#125;&#125;</pre>
+        <pre>
+          &#123;&#123;g-input label="First Name" value=model.firstName&#125;&#125;
+          &#123;&#123;g-textarea label="Notes" value=model.notes&#125;&#125;
+        </pre>
       {{/g-panel-body}}
     {{/g-panel}}
 

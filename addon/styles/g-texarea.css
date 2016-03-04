@@ -1,0 +1,17 @@
+.g-textarea {
+  border: 1px solid red;
+}
+.g-textarea label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2px;
+  font-weight: bold;
+  height: 100%;
+}
+.g-textarea textarea {
+  width: 190px;
+  min-height: 100px;
+  border: 1px solid #a9bfd3;
+  background: linear-gradient(180deg, whitesmoke 5%, white 95%);
+}
