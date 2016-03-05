@@ -11,3 +11,6 @@
 	font-family: arial,tahoma,verdana,helvetica;
 	font-size: 12px;
 }
+.g-toolbar .selectize-control {
+	top: -4px;
+}

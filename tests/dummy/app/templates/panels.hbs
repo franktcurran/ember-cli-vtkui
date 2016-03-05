@@ -12,7 +12,8 @@
 
 {{#g-panel title="Panel Toolbar"}}
   {{#g-toolbar}}
-    {{g-button text="Add One" class="bold"}}
+    {{g-button text="Add One"}}
+    {{g-selectize label="Robots" content=model optionValuePath="content.id" optionLabelPath="content.name"}}
   {{/g-toolbar}}
   {{#g-panel-body}}
     This panel has a toolbar.

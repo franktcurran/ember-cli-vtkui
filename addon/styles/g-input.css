@@ -1,5 +1,6 @@
 .g-input {
 	height: 28px;
+	display: inline-block;
 }
 .g-input-field {
 	padding: 2px;

@@ -11,6 +11,9 @@
 --}}
 
 {{#g-panel title="Grids"}}
+  {{#g-toolbar}}
+    {{g-button text="Toolbar Button"}}
+  {{/g-toolbar}}
   {{#g-panel-body}}
 
     <table class="g-grid" cellspacing="0">
@@ -41,4 +44,7 @@
     </table>
 
   {{/g-panel-body}}
+  {{#g-toolbar}}
+    pagination goes here
+  {{/g-toolbar}}
 {{/g-panel}}

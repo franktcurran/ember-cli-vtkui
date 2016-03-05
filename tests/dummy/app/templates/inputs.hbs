@@ -1,20 +1,21 @@
 {{#g-panel title="Inputs"}}
   {{#g-panel-body}}
 
-    <span class="g-input-field-label">First Name:</span> {{model.firstName}} <br/>
-    <span class="g-input-field-label">Middle Name:</span> {{model.middleName}} <br/>
-    <span class="g-input-field-label">Last Name:</span> {{model.lastName}} <br/>
-    <span class="g-input-field-label">Birthday:</span> {{model.bday}} <br/>
-    <span class="g-input-field-label">Notes:</span> {{model.notes}} <br/>
+    <span class="g-input-field-label">First Name:</span> {{person.firstName}} <br/>
+    <span class="g-input-field-label">Middle Name:</span> {{person.middleName}} <br/>
+    <span class="g-input-field-label">Last Name:</span> {{person.lastName}} <br/>
+    <span class="g-input-field-label">Birthday:</span> {{person.bday}} <br/>
+    <span class="g-input-field-label">Notes:</span> {{person.notes}} <br/>
     <hr/>
 
     <form>
-      {{g-input label="First Name" value=model.firstName}}
-      {{g-input label="Middle Name" value=model.middleName}}
-      {{g-input label="Last Name" value=model.lastName}}
-      {{g-input label="Birthday" type="date" value=model.bday}}
+      {{g-input label="First Name" value=person.firstName}} <br/>
+      {{g-input label="Middle Name" value=person.middleName}} <br/>
+      {{g-input label="Last Name" value=person.lastName}} <br/>
+      {{g-input label="Birthday" type="date" value=person.bday}} <br/>
+      {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"}}
 
-      {{g-textarea label="Notes" value=model.notes}}
+      {{g-textarea label="Notes" value=person.notes}}
 
       <div class="rg">
         <label>Radios</label>
@@ -31,8 +32,8 @@
     {{#g-panel title="Example"}}
       {{#g-panel-body}}
         <pre>
-          &#123;&#123;g-input label="First Name" value=model.firstName&#125;&#125;
-          &#123;&#123;g-textarea label="Notes" value=model.notes&#125;&#125;
+          &#123;&#123;g-input label="First Name" value=person.firstName&#125;&#125;
+          &#123;&#123;g-textarea label="Notes" value=person.notes&#125;&#125;
         </pre>
       {{/g-panel-body}}
     {{/g-panel}}
