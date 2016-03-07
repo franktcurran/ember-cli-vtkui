@@ -11,11 +11,12 @@
     <span class="g-input-field-label">SelectedModel:</span> {{selectedModel.name}} <br/>
     <hr/>
 
-    <form>
-      {{g-input label="First Name" value=person.firstName}} <br/>
-      {{g-input label="Middle Name" value=person.middleName}} <br/>
-      {{g-input label="Last Name" value=person.lastName}} <br/>
-      {{g-input label="Birthday" type="date" value=person.bday}} <br/>
+    <form {{action "submit" on="submit"}}>
+      {{g-input label="First Name" value=person.firstName model=person path="firstName"}}
+      <br/>
+      {{g-input label="Middle Name" value=person.middleName model=person path="middleName"}} <br/>
+      {{g-input label="Last Name" value=person.lastName model=person path="lastName"}} <br/>
+      {{g-input label="Birthday" type="date" value=person.bday model=person path="bday"}} <br/>
       {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"
         selection=person.robot}}
 
@@ -26,6 +27,7 @@
       <br/>
       {{g-selectize label="Model" content=selectedModels optionValuePath="content.id" optionLabelPath="content.name"
         selection=selectedModel}}
+      <br/><br/>
 
 {{!--
       <div id="blah" class="g-input">
@@ -35,6 +37,8 @@
         {{input id="blah3" type="radio" name="rg" value=3}} <label for="blah3">three</label>
       </div>
 --}}
+
+      {{input type="submit" class="g-button" text="Save" disabled=person.validations.isInvalid}}
 
     </form>
 

@@ -15,3 +15,9 @@
 	cursor: pointer;
 	border-color: #a9bfd3;
 }
+.g-button[disabled] {
+	background: #eee;
+	color: grey;
+	border-color: grey;
+	cursor: default;
+}

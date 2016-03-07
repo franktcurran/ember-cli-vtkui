@@ -18,3 +18,14 @@
 	font-size: 12px;
 	font-family: arial,tahoma,verdana,helvetica;
 }
+.g-invalid {
+	border: 1px solid #c30;
+	background: #c30;
+	color: white;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	display: inline-block;
+	border-radius: 50%;
+}

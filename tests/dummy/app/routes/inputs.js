@@ -1,16 +1,20 @@
 import Ember from 'ember';
+import Person from '../models/person';
 
 export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
-      person: Ember.Object.create({
-        firstName: "Joe",
-        middleName: "G",
-        lastName: "Developer",
-        bday: '2000-02-29',
-        robot: {id: 2, name: 'C3PO'},
-        notes: "fictional character"
+      person: Person.create(Ember.getOwner(this).ownerInjection(), {
       }),
+
+      // person: Ember.Object.create({
+      //   firstName: "Joe",
+      //   middleName: "G",
+      //   lastName: "Developer",
+      //   bday: '2000-02-29',
+      //   robot: {id: 2, name: 'C3PO'},
+      //   notes: "fictional character"
+      // }),
       robots: Ember.A([
         {id: 1, name: 'R2D2'},
         {id: 2, name: 'C3PO'},
@@ -40,6 +44,12 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    submit() {
+      console.log('saving...');
+      let person = this.modelFor('inputs').person;
+      console.log(person.get('validations.isValid'));
+      console.log(person.get('validations.isInvalid'));
+    },
     setCarModels(make) {
       let controller = this.controllerFor('inputs');
       let selectedModels = controller.get('selectedModels');
