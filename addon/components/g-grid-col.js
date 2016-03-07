@@ -13,7 +13,6 @@ export default Ember.Component.extend({
 
   _registerWithParent() {
     let parent = this.nearestOfType(Grid);
-    console.log('Got a parent of: ' + parent);
     parent.registerChild(this);
   }
 

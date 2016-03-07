@@ -17,7 +17,6 @@ export default Ember.Component.extend({
   },
 
   registerChild(child) {
-    console.log('Registering a child of: ' + child);
     Ember.run.debounce(this, function() {
       let keys = this.get('childrenKeys');
       let childKey = child.get('heading');
