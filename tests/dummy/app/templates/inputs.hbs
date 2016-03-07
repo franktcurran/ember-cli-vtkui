@@ -6,6 +6,9 @@
     <span class="g-input-field-label">Last Name:</span> {{person.lastName}} <br/>
     <span class="g-input-field-label">Birthday:</span> {{person.bday}} <br/>
     <span class="g-input-field-label">Notes:</span> {{person.notes}} <br/>
+    <span class="g-input-field-label">Robot:</span> {{person.robot.name}} <br/>
+    <span class="g-input-field-label">SelectedMake:</span> {{selectedMake.name}} <br/>
+    <span class="g-input-field-label">SelectedModel:</span> {{selectedModel.name}} <br/>
     <hr/>
 
     <form>
@@ -13,9 +16,16 @@
       {{g-input label="Middle Name" value=person.middleName}} <br/>
       {{g-input label="Last Name" value=person.lastName}} <br/>
       {{g-input label="Birthday" type="date" value=person.bday}} <br/>
-      {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"}}
+      {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"
+        selection=person.robot}}
 
       {{g-textarea label="Notes" value=person.notes}}
+
+      {{g-selectize label="Make" content=carMakes optionValuePath="content.id" optionLabelPath="content.name"
+        onChange="setCarModels" selection=selectedMake}}
+      <br/>
+      {{g-selectize label="Model" content=selectedModels optionValuePath="content.id" optionLabelPath="content.name"
+        selection=selectedModel}}
 
 {{!--
       <div id="blah" class="g-input">
