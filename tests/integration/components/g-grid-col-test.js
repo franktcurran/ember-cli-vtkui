@@ -1,5 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import Ember from 'ember';
 
 moduleForComponent('g-grid-col', 'Integration | Component | g grid col', {
   integration: true
@@ -8,17 +9,18 @@ moduleForComponent('g-grid-col', 'Integration | Component | g grid col', {
 test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });"
-
-  this.render(hbs`{{g-grid-col}}`);
-
-  assert.equal(this.$().text().trim(), '');
+  this.set('model', Ember.A([
+    { id:1, name: "Bubba" }
+  ]));
 
   // Template block usage:"
   this.render(hbs`
-    {{#g-grid-col}}
-      template block text
-    {{/g-grid-col}}
+    {{#g-grid content=model as |person|}}
+      {{#g-grid-col row=person heading="Name"}}
+        {{person.name}}
+      {{/g-grid-col}}
+    {{/g-grid}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'Bubba');
 });

@@ -1,50 +1,62 @@
-{{!--
-{{#g-grid content=model as |person|}}
-  {{#g-grid-col row=person}}
-    {{person.firsName}}
-  {{/g-grid-col}}
-  {{person}}
-{{/g-grid}}
-
-<br/>
-<hr/>
---}}
-
 {{#g-panel title="Grids"}}
   {{#g-toolbar}}
     {{g-button text="Toolbar Button"}}
   {{/g-toolbar}}
   {{#g-panel-body}}
 
-    <table class="g-grid" cellspacing="0">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>First Name</th>
-          <th>Middle Name</th>
-          <th>Last Name</th>
-          <th>Birthday</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each model as |person|}}
-          <tr>
-            <td>{{person.id}}</td>
-            <td>{{person.firstName}}</td>
-            <td>{{person.middleName}}</td>
-            <td>{{person.lastName}}</td>
-            <td>{{person.bday}}</td>
-          </tr>
-        {{else}}
-          <tr>
-            <td colspan="5">No models found.</td>
-          </tr>
-        {{/each}}
-      </tbody>
-    </table>
+    {{#g-grid content=model as |person|}}
+      {{#g-grid-col heading="First Name" row=person}}
+        {{person.firstName}}
+      {{/g-grid-col}}
+      {{#g-grid-col heading="Middle Name" row=person}}
+        {{person.middleName}}
+      {{/g-grid-col}}
+      {{#g-grid-col heading="Last Name" row=person}}
+        {{person.lastName}}
+      {{/g-grid-col}}
+      {{#g-grid-col heading="Birthday" row=person}}
+        {{person.bday}}
+      {{/g-grid-col}}
+    {{/g-grid}}
 
   {{/g-panel-body}}
   {{#g-toolbar}}
     pagination goes here
   {{/g-toolbar}}
+{{/g-panel}}
+
+<hr/>
+
+{{#g-panel title="Example"}}
+  {{#g-panel-body}}
+<pre>
+&#123;&#123;#g-panel title="Grids"&#125;&#125;
+  &#123;&#123;#g-toolbar&#125;&#125;
+    &#123;&#123;g-button text="Toolbar Button"&#125;&#125;
+  &#123;&#123;/g-toolbar&#125;&#125;
+  &#123;&#123;#g-panel-body&#125;&#125;
+
+    &#123;&#123;#g-grid content=model as |person|&#125;&#125;
+      &#123;&#123;#g-grid-col heading="First Name" row=person&#125;&#125;
+        &#123;&#123;person.firstName&#125;&#125;
+      &#123;&#123;/g-grid-col&#125;&#125;
+      &#123;&#123;#g-grid-col heading="Middle Name" row=person&#125;&#125;
+        &#123;&#123;person.middleName&#125;&#125;
+      &#123;&#123;/g-grid-col&#125;&#125;
+      &#123;&#123;#g-grid-col heading="Last Name" row=person&#125;&#125;
+        &#123;&#123;person.lastName&#125;&#125;
+      &#123;&#123;/g-grid-col&#125;&#125;
+      &#123;&#123;#g-grid-col heading="Birthday" row=person&#125;&#125;
+        &#123;&#123;person.bday&#125;&#125;
+      &#123;&#123;/g-grid-col&#125;&#125;
+    &#123;&#123;/g-grid&#125;&#125;
+
+  &#123;&#123;/g-panel-body&#125;&#125;
+  &#123;&#123;#g-toolbar&#125;&#125;
+    pagination goes here
+  &#123;&#123;/g-toolbar&#125;&#125;
+&#123;&#123;/g-panel&#125;&#125;
+</pre>
+
+  {{/g-panel-body}}
 {{/g-panel}}

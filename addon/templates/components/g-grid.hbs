@@ -1,9 +1,16 @@
-<tr>
-  {{yield}}
-</tr>
 
-{{!--#each content as |item idx|}}
+
+<thead>
   <tr>
-    {{yield item}}
+    {{#each children as |column|}}
+      <th>{{column.heading}}</th>
+    {{/each}}
   </tr>
-{{/each--}}
+</thead>
+<tbody>
+  {{#each content as |row|}}
+    <tr>
+      {{yield row}}
+    </tr>
+  {{/each}}
+</tbody>
