@@ -14,3 +14,6 @@
 .g-toolbar .selectize-control {
 	top: -4px;
 }
+.g-toolbar form {
+	display: inline-block;
+}
