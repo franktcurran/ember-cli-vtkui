@@ -8,8 +8,8 @@
   padding: 2px;
   padding-left: 4px;
   display: inline-block;
+  width: 196px;
 }
-
 .selectize-input > input {
   display: inline-block;
 }
@@ -17,4 +17,7 @@
   display: inline-block;
   height: 18px;
   vertical-align: middle;
+}
+.selectize-control.single .selectize-input, .selectize-dropdown.single {
+	border: 1px solid #a9bfd3;
 }
