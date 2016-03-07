@@ -4,6 +4,8 @@
   vertical-align: top;
   padding-top: 2px;
   font-weight: bold;
+  font-family: arial,tahoma,verdana,helvetica;
+  font-size: 12px;
   height: 100%;
 }
 .g-textarea textarea {
