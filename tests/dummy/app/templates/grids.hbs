@@ -21,7 +21,7 @@
 
   {{/g-panel-body}}
   {{#g-toolbar}}
-    pagination goes here
+    {{g-paginator offset=0 limit=25 total=4}}
   {{/g-toolbar}}
 {{/g-panel}}
 
@@ -45,7 +45,7 @@
 
   &#123;&#123;/g-panel-body&#125;&#125;
   &#123;&#123;#g-toolbar&#125;&#125;
-    pagination goes here
+    &#123;&#123;g-paginator offset=meta.offset limit=meta.limit total=meta.total&#125;&#125;
   &#123;&#123;/g-toolbar&#125;&#125;
 &#123;&#123;/g-panel&#125;&#125;
 </pre>

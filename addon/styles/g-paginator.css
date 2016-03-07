@@ -1,0 +1,11 @@
+.g-page {
+  padding: 4px;
+  color: #15428b;
+  cursor: pointer;
+  font-weight: bold;
+}
+.g-page[disabled=true] {
+  color: grey;
+  cursor: default;
+  font-weight: normal;
+}

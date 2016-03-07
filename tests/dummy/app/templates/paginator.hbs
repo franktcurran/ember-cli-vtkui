@@ -1,0 +1,30 @@
+{{#g-panel title="Pagination"}}
+  {{#g-panel-body}}
+
+    {{g-paginator offset=offset limit=25 total=36}}
+
+    <hr/>
+
+    {{#g-panel title="Example"}}
+      {{#g-panel-body}}
+      <strong><pre>&#123;&#123;g-paginator offset=meta.offset limit=meta.limit total=meta.total&#125;&#125;</pre></strong>
+
+      <p>
+        Note: For this to work correctly, make sure you are:
+        <ul>
+          <li>calling 'this.store.query'. The 'meta' object will not be set when using 'this.store.findAll'.</li>
+          <li>
+            Have queryParams set on your route:
+<pre>queryParams: {
+  offset: { refreshModel: true },
+  limit: { refreshModel: true }
+}
+</pre>
+          </li>
+        </ul>
+      </p>
+      {{/g-panel-body}}
+    {{/g-panel}}
+
+  {{/g-panel-body}}
+{{/g-panel}}

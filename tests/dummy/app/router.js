@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('combos');
   this.route('buttons');
   this.route('grids');
+  this.route('paginator');
 });
 
 export default Router;
