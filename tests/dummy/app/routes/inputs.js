@@ -1,4 +1,5 @@
 import Ember from 'ember';
+
 export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
@@ -44,7 +45,7 @@ export default Ember.Route.extend({
       let selectedModels = controller.get('selectedModels');
       selectedModels.clear();
       controller.get('carModels').forEach((i) => {
-        if (i.make == make.id) {
+        if (i.make === make.id) {
           selectedModels.pushObject(i);
         }
       });
