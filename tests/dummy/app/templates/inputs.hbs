@@ -1,6 +1,7 @@
 {{#g-panel title="Inputs"}}
   {{#g-panel-body}}
 
+{{!--
     <span class="g-input-field-label">First Name:</span> {{person.firstName}} <br/>
     <span class="g-input-field-label">Middle Name:</span> {{person.middleName}} <br/>
     <span class="g-input-field-label">Last Name:</span> {{person.lastName}} <br/>
@@ -10,33 +11,31 @@
     <span class="g-input-field-label">SelectedMake:</span> {{selectedMake.name}} <br/>
     <span class="g-input-field-label">SelectedModel:</span> {{selectedModel.name}} <br/>
     <hr/>
+--}}
 
     <form {{action "submit" on="submit"}}>
-      {{g-input label="First Name" value=person.firstName model=person path="firstName"}}
-      <br/>
-      {{g-input label="Middle Name" value=person.middleName model=person path="middleName"}} <br/>
-      {{g-input label="Last Name" value=person.lastName model=person path="lastName"}} <br/>
-      {{g-input label="Birthday" type="date" value=person.bday model=person path="bday"}} <br/>
+      {{g-input label="First Name" model=person path="firstName"}} <br/>
+      {{g-input label="Middle Name" model=person path="middleName"}} <br/>
+      {{g-input label="Last Name" model=person path="lastName"}} <br/>
+      {{g-input label="Birthday" type="date" model=person path="bday"}} <br/>
       {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"
         selection=person.robot}}
 
       {{g-textarea label="Notes" value=person.notes}}
 
       {{g-selectize label="Make" content=carMakes optionValuePath="content.id" optionLabelPath="content.name"
-        onChange="setCarModels" selection=selectedMake}}
-      <br/>
+        onChange="setCarModels" selection=selectedMake}} <br/>
       {{g-selectize label="Model" content=selectedModels optionValuePath="content.id" optionLabelPath="content.name"
         selection=selectedModel}}
       <br/><br/>
 
-{{!--
-      <div id="blah" class="g-input">
+
+      <div id="blah" class="g-input" style="display:flex; justify-content:space-between; width:290px;">
         <label for="blah" class="g-input-field-label">Horizontal</label>
-        {{input id="blah1" type="radio" name="rg" value=1}} <label for="blah1">one</label>
-        {{input id="blah2" type="radio" name="rg" value=2}} <label for="blah2">two</label>
-        {{input id="blah3" type="radio" name="rg" value=3}} <label for="blah3">three</label>
+        {{input id="blah1" type="radio" name="rg" value=1}} <label for="blah1">Phone</label>
+        {{input id="blah2" type="radio" name="rg" value=2}} <label for="blah2">Email</label>
+        {{input id="blah3" type="radio" name="rg" value=3}} <label for="blah3">Mobile</label>
       </div>
---}}
 
       {{input type="submit" class="g-button" text="Save" disabled=person.validations.isInvalid}}
 

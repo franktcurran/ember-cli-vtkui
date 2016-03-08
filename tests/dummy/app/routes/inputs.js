@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       person: Person.create(Ember.getOwner(this).ownerInjection(), {
       }),
 
-      // person: Ember.Object.create({
+      // person: Person.create(Ember.getOwner(this).ownerInjection(){
       //   firstName: "Joe",
       //   middleName: "G",
       //   lastName: "Developer",
