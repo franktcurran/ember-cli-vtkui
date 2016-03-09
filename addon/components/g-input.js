@@ -12,9 +12,11 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    var path = this.get('path');
-    defineProperty(this, 'validation', computed.oneWay(`model.validations.attrs.${path}`));
-    defineProperty(this, 'value', computed.alias(`model.${path}`));
+    let attrs = this.get('attrs');
+    if (attrs.model && attrs.path) {
+      defineProperty(this, 'validation', computed.oneWay(`model.validations.attrs.${attrs.path}`));
+      defineProperty(this, 'value', computed.alias(`model.${attrs.path}`));
+    }
   },
 
   isValid: computed('validation.isValid', function() {

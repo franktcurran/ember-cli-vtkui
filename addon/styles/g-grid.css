@@ -24,7 +24,7 @@
 	background: linear-gradient(180deg, whitesmoke 70%, #eee 30%);
 }
 .g-grid td {
-	padding: 4px;
+	padding: 2px 4px 2px 4px;
 	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	line-height: 14px;
