@@ -1,6 +1,6 @@
 
 <label for={{id}} class="g-input-field-label">{{label}}</label>
-{{input id=id type=type value=value class="g-input-field" classNameBindings="isValid::g-input-invalid"}}
+{{input id=id type=type value=value class="g-input-field"}}
 {{#if validation.message}}
   {{g-invalid tooltipContent=validation.message tooltipPlace='right'}}
 {{else}}

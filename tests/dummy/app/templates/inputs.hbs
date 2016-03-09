@@ -1,8 +1,7 @@
 {{#g-panel title="Inputs"}}
   {{#g-panel-body}}
 
-{{!--
-    <span class="g-input-field-label">First Name:</span> {{person.firstName}} <br/>
+    {{!-- <span class="g-input-field-label">First Name:</span> {{person.firstName}} <br/>
     <span class="g-input-field-label">Middle Name:</span> {{person.middleName}} <br/>
     <span class="g-input-field-label">Last Name:</span> {{person.lastName}} <br/>
     <span class="g-input-field-label">Birthday:</span> {{person.bday}} <br/>
@@ -10,8 +9,8 @@
     <span class="g-input-field-label">Robot:</span> {{person.robot.name}} <br/>
     <span class="g-input-field-label">SelectedMake:</span> {{selectedMake.name}} <br/>
     <span class="g-input-field-label">SelectedModel:</span> {{selectedModel.name}} <br/>
-    <hr/>
---}}
+    <hr/> --}}
+
 
     <form {{action "submit" on="submit"}}>
       {{g-input label="First Name" model=person path="firstName"}} <br/>
@@ -21,7 +20,7 @@
       {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"
         selection=person.robot model=person path="robot"}} <br/>
 
-      {{g-textarea label="Notes" value=person.notes}}
+      {{g-textarea label="Notes" model=person path="notes"}}
       <br/>
 
       {{g-selectize label="Make" content=carMakes optionValuePath="content.id" optionLabelPath="content.name"
@@ -38,7 +37,7 @@
         {{input id="blah3" type="radio" name="rg" value=3}} <label for="blah3">Mobile</label>
       </div>
 
-      {{input type="submit" class="g-button" text="Save" disabled=person.validations.isInvalid}}
+      {{g-button type="submit" text="Save" disabled=person.validations.isInvalid}}
 
     </form>
 
