@@ -9,7 +9,7 @@
   value=value
   disabled=disabled}}
 {{#if validation.message}}
-  <div class="g-invalid" title={{validation.message}}>!</div>
+  {{g-invalid tooltipContent=validation.message tooltipPlace='right'}}
 {{else}}
   <div class="g-valid"></div>
 {{/if}}

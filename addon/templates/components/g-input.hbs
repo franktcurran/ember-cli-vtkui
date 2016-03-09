@@ -2,7 +2,7 @@
 <label for={{id}} class="g-input-field-label">{{label}}</label>
 {{input id=id type=type value=value class="g-input-field" classNameBindings="isValid::g-input-invalid"}}
 {{#if validation.message}}
-  <div class="g-invalid" title={{validation.message}}>!</div>
+  {{g-invalid tooltipContent=validation.message tooltipPlace='right'}}
 {{else}}
   <div class="g-valid"></div>
 {{/if}}
