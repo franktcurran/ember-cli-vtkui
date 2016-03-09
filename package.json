@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "rm -rf dist tmp && ember server",
     "test": "ember try:testall"
   },
   "repository": {

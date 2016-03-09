@@ -9,7 +9,8 @@
   height: 100%;
 }
 .g-textarea textarea {
-  width: 190px;
+  /*width: 192px;*/
+  width: 15.833em;
   min-height: 100px;
   border: 1px solid #a9bfd3;
   background: linear-gradient(180deg, whitesmoke 5%, white 95%);
