@@ -12,5 +12,9 @@
     <tr>
       {{yield row}}
     </tr>
+    {{else}}
+    <tr>
+      <td>No records found.</td>
+    </tr>
   {{/each}}
 </tbody>
