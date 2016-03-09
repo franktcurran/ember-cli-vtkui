@@ -21,6 +21,6 @@
 .selectize-control.single .selectize-input, .selectize-dropdown.single {
 	border: 1px solid #a9bfd3;
 }
-.g-selectize-invalid > .selectize-control.single .selectize-input {
+/*.g-selectize-invalid > .selectize-control.single .selectize-input {
 	border: 1px solid red;
-}
+}*/
