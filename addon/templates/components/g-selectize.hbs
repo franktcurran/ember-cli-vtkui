@@ -7,5 +7,9 @@
   select-item="select-item"
   selection=selection
   value=value
-  disabled=disabled
-}}
+  disabled=disabled}}
+{{#if validation.message}}
+  <div class="g-invalid" title={{validation.message}}>!</div>
+{{else}}
+  <div class="g-valid"></div>
+{{/if}}

@@ -15,7 +15,9 @@ const Validations = buildValidations({
       validator('presence', true),
       validator('length', { min: 2 })
     ]
-  }
+  },
+  robot: validator('presence', true),
+  notes: validator('presence', true)
 });
 
 
@@ -23,5 +25,6 @@ export default Ember.Object.extend(Validations, {
   firstName: null,
   middleName: null,
   lastName: null,
-  bday: null
+  bday: null,
+  robot: null
 });

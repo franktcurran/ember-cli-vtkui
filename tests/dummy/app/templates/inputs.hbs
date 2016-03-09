@@ -19,9 +19,10 @@
       {{g-input label="Last Name" model=person path="lastName"}} <br/>
       {{g-input label="Birthday" type="date" model=person path="bday"}} <br/>
       {{g-selectize label="Robot" content=robots optionValuePath="content.id" optionLabelPath="content.name"
-        selection=person.robot}}
+        selection=person.robot model=person path="robot"}} <br/>
 
       {{g-textarea label="Notes" value=person.notes}}
+      <br/>
 
       {{g-selectize label="Make" content=carMakes optionValuePath="content.id" optionLabelPath="content.name"
         onChange="setCarModels" selection=selectedMake}} <br/>

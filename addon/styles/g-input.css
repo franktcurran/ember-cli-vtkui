@@ -16,6 +16,8 @@
 	display: inline-block;
 	font-weight: bold;
 	font-size: 12px;
+	line-height: 22px;
+	vertical-align: top;
 	font-family: arial,tahoma,verdana,helvetica;
 }
 .g-invalid {

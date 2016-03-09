@@ -11,13 +11,16 @@
   width: 196px;
 }
 .selectize-input > input {
-  display: inline-block;
+  display: inline-block;;
 }
 .selectize-control {
   display: inline-block;
   height: 18px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .selectize-control.single .selectize-input, .selectize-dropdown.single {
 	border: 1px solid #a9bfd3;
+}
+.g-selectize-invalid > .selectize-control.single .selectize-input {
+	border: 1px solid red;
 }
