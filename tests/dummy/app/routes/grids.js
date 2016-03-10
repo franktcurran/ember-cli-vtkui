@@ -11,7 +11,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    didGridDblClick(arg) {
+    alertRow(arg) {
       window.alert('you doubleclicked: ' + JSON.stringify(arg));
     }
   }

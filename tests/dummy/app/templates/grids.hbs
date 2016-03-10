@@ -4,35 +4,7 @@
   {{/g-toolbar}}
   {{#g-panel-body}}
 
-    {{#g-grid content=model as |person|}}
-      {{#g-grid-col heading="First Name" row=person}}
-        {{person.firstName}}
-      {{/g-grid-col}}
-      {{#g-grid-col heading="Middle Name" row=person}}
-        {{person.middleName}}
-      {{/g-grid-col}}
-      {{#g-grid-col heading="Last Name" row=person}}
-        {{person.lastName}}
-      {{/g-grid-col}}
-      {{#g-grid-col heading="Birthday" row=person}}
-        {{person.bday}}
-      {{/g-grid-col}}
-    {{/g-grid}}
-
-  {{/g-panel-body}}
-  {{#g-toolbar}}
-    {{g-paginator offset=0 limit=25 total=4}}
-  {{/g-toolbar}}
-{{/g-panel}}
-
-
-{{#g-panel title="Grids"}}
-  {{#g-toolbar}}
-    {{g-button text="Toolbar Button"}}
-  {{/g-toolbar}}
-  {{#g-panel-body}}
-
-    {{#g-grid onDoubleClick="didGridDblClick" content=model as |person|}}
+    {{#g-grid onDoubleClick="alertRow" content=model as |person|}}
       {{#g-grid-col heading="First Name" row=person}}
         {{person.firstName}}
       {{/g-grid-col}}
