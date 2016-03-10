@@ -8,5 +8,11 @@ export default Ember.Route.extend({
       {id: 3, firstName: 'Jar', middleName: 'J', lastName: 'Binks', bday: null },
       {id: 4, firstName: 'Luke', middleName: 'M', lastName: 'Skywalker', bday: '1978-07-01' }
     ]);
+  },
+
+  actions: {
+    didGridDblClick(arg) {
+      window.alert('you doubleclicked: ' + JSON.stringify(arg));
+    }
   }
 });

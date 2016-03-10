@@ -14,6 +14,12 @@ export default Ember.Component.extend({
   _registerWithParent() {
     let parent = this.nearestOfType(Grid);
     parent.registerChild(this);
+  },
+
+  doubleClick() {
+    if (this.get('onDoubleClick')) {
+      this.sendAction('onDoubleClick', this.get('row'));
+    }
   }
 
 });

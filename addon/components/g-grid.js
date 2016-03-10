@@ -17,14 +17,26 @@ export default Ember.Component.extend({
   },
 
   registerChild(child) {
+    if (this.get('onDoubleClick')) {
+      Ember.set(child, 'onDoubleClick', this.get('onDoubleClick'));
+    }
     Ember.run.debounce(this, function() {
       let keys = this.get('childrenKeys');
       let childKey = child.get('heading');
       if (!keys.contains(childKey)) {
         keys.push(childKey);
         this.get('children').pushObject(child);
+
       }
     }, 150);
   }
+
+  // ,
+  //
+  // doubleClick() {
+  //   if (this.get('onDoubleClick')) {
+  //     this.sendAction('onDoubleClick', this.get('doubleClickArg'));
+  //   }
+  // }
 
 });
