@@ -1,17 +1,4 @@
-{{#g-panel title="Panel Title"}}
-  {{#g-panel-body}}
-    This panel has a title.
-    {{code-snippet name="panel-title.hbs"}}
-  {{/g-panel-body}}
-{{/g-panel}}
-
-{{#g-panel}}
-  {{#g-panel-body}}
-    This panel does not have a title.
-    {{code-snippet name="panel-no-title.hbs"}}
-  {{/g-panel-body}}
-{{/g-panel}}
-
+{{!-- BEGIN-SNIPPET panel-toolbar --}}
 {{#g-panel title="Toolbar"}}
   {{#g-toolbar}}
     {{g-button text="Button"}}
@@ -20,6 +7,6 @@
   {{/g-toolbar}}
   {{#g-panel-body}}
     <p>Some text here</p>
-    {{code-snippet name="panel-toolbar.hbs"}}
   {{/g-panel-body}}
 {{/g-panel}}
+{{!-- END-SNIPPET --}}
