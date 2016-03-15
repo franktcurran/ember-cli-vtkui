@@ -8,10 +8,10 @@
   </tr>
 </thead>
 <tbody>
-  {{#each content as |row|}}
-    <tr>
-      {{yield row}}
-    </tr>
+  {{#each content as |row index|}}
+    {{#g-grid-row rowIndex=index}}
+      {{yield row index}}
+    {{/g-grid-row}}
     {{else}}
     <tr>
       <td>No records found.</td>

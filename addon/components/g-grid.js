@@ -26,17 +26,9 @@ export default Ember.Component.extend({
       if (!keys.contains(childKey)) {
         keys.push(childKey);
         this.get('children').pushObject(child);
-
       }
+
     }, 150);
   }
-
-  // ,
-  //
-  // doubleClick() {
-  //   if (this.get('onDoubleClick')) {
-  //     this.sendAction('onDoubleClick', this.get('doubleClickArg'));
-  //   }
-  // }
 
 });
