@@ -18,7 +18,7 @@ export default Component.extend({
     this._super(...arguments);
     let attrs = this.get('attrs');
     if (attrs.model && attrs.path) {
-      defineProperty(this, 'validation', computed.oneWay(`model.validations.attrs.${this.get('path')}`));
+      defineProperty(this, 'validation', computed.oneWay(`model.validations.attrs.${attrs.path}`));
     }
   },
 
