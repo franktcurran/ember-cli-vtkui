@@ -18,16 +18,17 @@
         {{person.bday}}
       {{/g-grid-col}}
     {{/g-grid}}
+
+    <hr/>
+
+    {{#g-panel title="Example"}}
+      {{#g-panel-body}}
+        {{code-snippet name="grids.hbs"}}
+      {{/g-panel-body}}
+    {{/g-panel}}
+
   {{/g-panel-body}}
   {{#g-toolbar}}
     {{g-paginator offset=0 limit=25 total=4}}
   {{/g-toolbar}}
-{{/g-panel}}
-
-<hr/>
-
-{{#g-panel title="Example"}}
-  {{#g-panel-body}}
-    {{code-snippet name="grids.hbs"}}
-  {{/g-panel-body}}
 {{/g-panel}}
