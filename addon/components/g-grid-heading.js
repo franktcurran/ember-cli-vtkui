@@ -9,16 +9,21 @@ export default Ember.Component.extend({
   sortDir: Ember.computed('isSortAsc', function() {
     return this.get('isSortAsc') ? 'ASC' : 'DESC';
   }),
+  isSorted: Ember.computed('sortPath', 'sortField', function() {
+    return (this.get('sortField') === this.get('sortPath'));
+  }),
 
   _getParent() {
     return this.nearestOfType(Grid);
   },
 
   click() {
-    console.log('clicked me: setting to: ' + this.get('sortPath'));
-    let parent = this._getParent();
-    this.toggleProperty('isSortAsc');
-    parent.set('sortField', this.get('sortPath'));
-    parent.set('sortDir', this.get('sortDir'));
+    let sortPath = this.get('sortPath');
+    if (sortPath) {
+      let parent = this._getParent();
+      this.toggleProperty('isSortAsc');
+      parent.set('sortField', sortPath);
+      parent.set('sortDir', this.get('sortDir'));
+    }
   }
 });

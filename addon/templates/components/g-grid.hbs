@@ -1,7 +1,7 @@
 <thead>
   <tr>
     {{#each children as |column|}}
-      {{g-grid-heading heading=column.heading sortPath=column.sortPath}}
+      {{g-grid-heading heading=column.heading sortPath=column.sortPath sortField=sortField}}
     {{/each}}
   </tr>
 </thead>
@@ -15,12 +15,4 @@
       <td>No records found.</td>
     </tr>
   {{/each}}
-  {{!-- <tfoot>
-    <tr>
-      <td colspan="4">
-        sortField: {{sortField}} -
-        sortDir: {{sortDir}}
-      </td>
-    </tr>
-  </tfoot> --}}
 </tbody>
