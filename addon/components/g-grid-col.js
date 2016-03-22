@@ -5,6 +5,7 @@ import Grid from './g-grid';
 export default Ember.Component.extend({
   layout,
   tagName: 'td',
+  sortPath: null,
 
   init() {
     this._super(...arguments);

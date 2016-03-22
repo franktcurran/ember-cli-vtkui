@@ -24,6 +24,9 @@ export default Ember.Component.extend({
       let keys = this.get('childrenKeys');
       let childKey = child.get('heading');
       if (!keys.contains(childKey)) {
+
+        console.log('child: ' + child.get('heading'));
+
         keys.push(childKey);
         this.get('children').pushObject(child);
       }

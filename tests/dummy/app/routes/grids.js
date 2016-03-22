@@ -11,6 +11,11 @@ export default Ember.Route.extend({
     ]);
   },
 
+  queryParams: {
+    sortField: { refreshModel: true },
+    sortDir: { refreshModel: true }
+  },
+
   actions: {
     alertRow(arg) {
       window.alert('you doubleclicked: ' + JSON.stringify(arg));
