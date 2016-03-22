@@ -27,7 +27,6 @@ export default Ember.Component.extend({
         keys.push(childKey);
         this.get('children').pushObject(child);
       }
-
     }, 150);
   }
 

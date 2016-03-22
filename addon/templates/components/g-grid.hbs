@@ -1,9 +1,7 @@
-
-
 <thead>
   <tr>
     {{#each children as |column|}}
-      <th>{{column.heading}}</th>
+      {{g-grid-heading heading=column.heading sortPath=column.sortPath sortField=sortField}}
     {{/each}}
   </tr>
 </thead>
