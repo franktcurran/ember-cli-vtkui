@@ -54,8 +54,23 @@
 
 {{#g-panel title="Embeddable Ember Apps"}}
   {{#g-panel-body}}
+    The Addon provides Blueprints to make the initial configuration for embedding apps a bit easier.
+    The development environment is left untouched so that the development process remains the same as any other Ember
+    application.  The production builds are configured in the following manner:
     <ul>
-      <li>todo</li>
+      <li>config/environment.js - locationType: 'none', autoboot: false.</li>
+      <li>
+        app/app.js - gets the autoboot settings from config/environment.js, sets an appOptions object that can be
+        populated with any information the Ember App may need to run. For example, order ids can be passed from the main
+        application in this object and an application initializer can set up a service to retain this information for
+        the lifetime of the App.
+      </li>
+    </ul>
+    A couple of additional settings that aren't provided via blueprints live in the ember-cli-build.js file:
+    <ul>
+      <li>
+        {{code-snippet name="ember-cli-build.js"}}
+      </li>
     </ul>
   {{/g-panel-body}}
 {{/g-panel}}
