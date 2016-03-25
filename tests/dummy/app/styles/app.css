@@ -31,6 +31,7 @@ body > .ember-view {
 .body {
 	flex: 1;
 	padding: .7rem;
+	overflow: auto;
 }
 
 .g-panel {
