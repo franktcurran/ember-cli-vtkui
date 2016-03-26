@@ -1,0 +1,31 @@
+/** Tab Panels **/
+.g-tab {
+	font-size: 11px;
+	font-family: arial,tahoma,verdana,helvetica;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: bottom;
+	border: 1px solid #8db2e3;
+	border-bottom: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: inline-block;
+	min-width: 5rem;
+	height: 25px;
+	line-height: 27px;
+	position: relative;
+	bottom: 0;
+	color: #15428b;
+	background: linear-gradient(180deg, rgba(218, 230, 246, 0) 90%, #b7ceed 10%);
+	box-shadow: 1px 1px #8db2e3;
+	cursor: pointer;
+}
+.g-tab.active {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: arial,tahoma,verdana,helvetica;
+  color: #15428b;
+	background: rgb(218, 234, 246);
+}
