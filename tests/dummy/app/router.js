@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('panels');
+  this.route('tab-panels', { path: '/tab-panels' }, function() {
+      this.route('tab2');
+      this.route('tab3');
+      this.route('tab4');
+  });
   this.route('inputs');
   this.route('combos');
   this.route('buttons');
