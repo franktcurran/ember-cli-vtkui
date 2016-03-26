@@ -38,4 +38,15 @@ body > .ember-view {
 	max-width: 700px;
 	margin-bottom: 5px !important;
 	margin:auto;
+	display: block !important;
+}
+.g-panel-body {
+	flex:none;
+}
+.ember-application, .ember-application > .ember-view, .liquid-container, .liquid-child {
+	height: inherit;
+}
+
+.nav.active {
+	color: #d14;
 }
