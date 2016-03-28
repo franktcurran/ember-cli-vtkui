@@ -1,8 +1,10 @@
 {{heading}}
 {{#if isSorted}}
-  <span class="sort-indicator">
-    {{#if isSortAsc}}&bigtriangleup;{{else}}&bigtriangledown;{{/if}}
-  </span>
+  {{#if isSortAsc}}
+    <div class="up-arrow sort-indicator"></div>
+  {{else}}
+    <div class="down-arrow sort-indicator"></div>
+  {{/if}}
 {{else}}
   <span class="sort-indicator">&nbsp;</span>
 {{/if}}

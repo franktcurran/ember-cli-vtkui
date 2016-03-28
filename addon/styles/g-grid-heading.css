@@ -3,3 +3,22 @@
   height: 12px;
   width: 12px;
 }
+
+.up-arrow {
+	width: 0;
+	height: 0;
+  border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #15428b;
+  display: inline-block;
+  cursor: pointer;
+}
+.down-arrow {
+	width: 0;
+	height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #15428b;
+  display: inline-block;
+  cursor: pointer;
+}

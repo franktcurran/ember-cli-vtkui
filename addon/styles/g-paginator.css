@@ -1,11 +1,39 @@
-.g-page {
-  padding: 4px;
-  color: #15428b;
-  cursor: pointer;
-  font-weight: bold;
+.g-paginator {
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
-.g-page[disabled=true] {
-  color: grey;
+.vertical-center {
+  vertical-align: middle;
+  margin: 0 4px 0 4px;
+}
+.left-arrow {
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid #15428b;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.right-arrow {
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #15428b;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.left-arrow[disabled=true] {
+  border-right-color: silver;
   cursor: default;
-  font-weight: normal;
+}
+
+.right-arrow[disabled=true] {
+  border-left-color: silver;
+  cursor: default;
 }
