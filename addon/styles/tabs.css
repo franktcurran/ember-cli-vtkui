@@ -18,14 +18,17 @@
 	position: relative;
 	bottom: 0;
 	color: #15428b;
-	background: linear-gradient(180deg, rgba(218, 230, 246, 0) 90%, #b7ceed 10%);
-	box-shadow: 1px 1px #8db2e3;
+	background: linear-gradient(180deg, #d0def0, #b7ceed);
 	cursor: pointer;
+}
+.g-tab:hover {
+	color: #15428b;
 }
 .g-tab.active {
 	font-weight: bold;
 	font-size: 11px;
 	font-family: arial,tahoma,verdana,helvetica;
   color: #15428b;
-	background: rgb(218, 234, 246);
+	box-shadow: 1px 1px #b7ceed;
+	background: linear-gradient(180deg, white, #d0def0);
 }
