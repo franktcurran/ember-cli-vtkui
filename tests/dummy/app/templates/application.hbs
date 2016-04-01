@@ -9,7 +9,8 @@
     {{link-to "Combos" "combos" class="nav"}} |
     {{link-to "Buttons" "buttons" class="nav"}} |
     {{link-to "Grids" "grids" (query-params sortField="firstName") class="nav"}} |
-    {{link-to "Paginator" "paginator" (query-params offset=0) class="nav"}}
+    {{link-to "Paginator" "paginator" (query-params offset=0) class="nav"}} |
+    {{link-to "Modals" "modals" class="nav"}}
   </div>
 </div>
 
@@ -21,3 +22,14 @@
   <a href="https://github.com/rynam0" target="_blank">@rynam0</a> on
   <a href="https://github.com/rynam0/ember-cli-vtkui" target="_blank">GitHub</a>
 {{/g-toolbar}}
+
+{{#if showModal}}
+  {{#g-modal title=modalTitle closeAction="closeModal"}}
+    <div class="g-modal-body">
+      <p>{{modalMessage}}</p>
+    </div>
+    <div class="g-modal-footer">
+      {{g-button text="OK" action="closeModal"}}
+    </div>
+  {{/g-modal}}
+{{/if}}
