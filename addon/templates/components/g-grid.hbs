@@ -9,9 +9,9 @@
 {{#if onDragAndDrop}}
   {{#sortable-group tagName="tbody" onChange="reorderItems" as |group|}}
     {{#each content as |row index|}}
-      {{#sortable-item tagName="tr" model=row group=group handle="tr"}}
+      {{#g-sortable-item tagName="tr" model=row group=group handle="tr" rowIndex=index}}
         {{yield row index}}
-      {{/sortable-item}}
+      {{/g-sortable-item}}
       {{else}}
       <tr>
         <td>No records found.</td>
