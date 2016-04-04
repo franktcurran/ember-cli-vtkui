@@ -24,7 +24,7 @@ export default Ember.Route.extend({
         modalMessage: `you doubleclicked: ${JSON.stringify(arg)}`
       });
     },
-    onDragAndDrop(itemModels, draggedModel) {
+    doDnd(itemModels, draggedModel) {
         this.controllerFor('application').setProperties({
           showModal: true,
           modalTitle: 'Info',

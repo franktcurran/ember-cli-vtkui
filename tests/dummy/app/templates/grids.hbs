@@ -36,7 +36,7 @@
 {{#g-panel title="Drag and Drop Grid"}}
   {{#g-panel-body}}
 
-    {{#g-grid onDragAndDrop="onDragAndDrop" sortField=sortField sortDir=sortDir content=model as |person|}}
+    {{#g-grid onDragAndDrop="doDnd" sortField=sortField sortDir=sortDir content=model as |person|}}
       {{#g-grid-col heading="First Name" row=person sortPath="firstName"}}
         {{person.firstName}}
       {{/g-grid-col}}

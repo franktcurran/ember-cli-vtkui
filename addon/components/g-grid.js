@@ -34,7 +34,7 @@ export default Ember.Component.extend({
     reorderItems(itemModels, draggedModel) {
       this.set('content', itemModels);
       this.set('content.justDragged', draggedModel);
-      this.sendAction(this.get('onDragAndDrop'), itemModels, draggedModel);
+      this.sendAction('onDragAndDrop', itemModels, draggedModel);
     }
   }
 
