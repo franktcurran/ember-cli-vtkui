@@ -21,7 +21,7 @@ export default Ember.Component.extend({
   },
 
   click() {
-    if (this.get('selector')) {
+    if (this.get('selector') && !this.get('disabled')) {
       this.toggleProperty('_selected');
       this.get('parent').updateSelections();
     }
