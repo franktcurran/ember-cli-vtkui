@@ -14,7 +14,7 @@
 
   {{#sortable-group tagName="tbody" onChange="reorderItems" as |group|}}
     {{#each content as |row index|}}
-      {{#g-sortable-item tagName="tr" model=row group=group handle="tr" rowIndex=index}}
+      {{#g-sortable-item tagName="tr" model=row group=group handle=".g-grid-col-drag-handle" rowIndex=index}}
         {{yield row index}}
       {{/g-sortable-item}}
       {{else}}

@@ -8,6 +8,9 @@
        sortDir=sortDir
        selection=selectedPeople
        content=model as |person|}}
+      {{#g-grid-col dragHandle=true heading="&varr;" row=person}}
+        ...
+      {{/g-grid-col}}
       {{g-grid-col selector=true row=person}}
       {{#g-grid-col heading="First Name" row=person sortPath="firstName"}}
         {{person.firstName}}

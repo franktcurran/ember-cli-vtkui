@@ -18,7 +18,7 @@ export default Ember.Component.extend({
   },
 
   registerChild(child) {
-    if (this.get('onDoubleClick') && !child.get('selector')) {
+    if (this.get('onDoubleClick') && !child.get('selector') && !child.get('dragHandle')) {
       Ember.set(child, 'onDoubleClick', this.get('onDoubleClick'));
     }
 
@@ -29,7 +29,8 @@ export default Ember.Component.extend({
         headings.pushObject(Ember.Object.create({
           text: heading,
           sortPath: child.get('sortPath') || '',
-          isSelector: child.get('selector')
+          isSelector: child.get('selector'),
+          dragHandle: child.get('dragHandle')
         }));
       }
       this.get('children').pushObject(child);

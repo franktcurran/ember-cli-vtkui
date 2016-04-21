@@ -5,8 +5,10 @@ import Grid from './g-grid';
 export default Ember.Component.extend({
   layout,
   tagName: 'td',
+  classNameBindings: ['dragHandle:g-grid-col-drag-handle:'],
 
   selector: false,
+  dragHandle: false,
   _selected: false,
   parent: null,
 
