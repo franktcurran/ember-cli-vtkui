@@ -13,6 +13,11 @@
   font-size: $bodyFontSize;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 @import "g-button";
 @import "g-grid-heading";
 @import "g-grid-row";
